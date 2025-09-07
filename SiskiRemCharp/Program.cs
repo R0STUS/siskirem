@@ -23,5 +23,5 @@ public class Ram:Woman
 
 public class Rem:Woman
 {
-    public static new float BoobaSize { get; private set; } => Ram.BoobaSize * 1.5f; 
+   public static new float BoobaSize => Ram.BoobaSize * 1.5f; 
 }
