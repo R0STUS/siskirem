@@ -1,0 +1,12 @@
+[package]
+name = "siskirem"
+version = "0.0.1"
+edition = "2024"
+
+
+[dependencies]
+[profile.release]
+opt-level = "z"     # или "s", оба нацелены на минимизацию размера
+codegen-units = 1   # замедлит сборку, но даст более компактный код
+panic = "abort"     # отключает развёрнутый unwinding
+strip = true        # (начиная с Rust 1.59+) эквивалент вызова `strip`
