@@ -1,5 +1,3 @@
-*.class
-*.jar
-siskirem
-target
-*/build
+**/siskirem
+**/build
+# what are they stand for?
